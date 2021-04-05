@@ -126,6 +126,60 @@ eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee
 eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee
 eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee
 `;
+            case "image2":return img`
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . f f f f f f . . . . . . 
+. . . . f f f f f f . . . . . . 
+. . . . f f f f f f . . . . . . 
+. . . . f f f f f f . . . . . . 
+. . . . f f f f f f . . . . . . 
+. . . . . . f f . . . . . . . . 
+. . . . . . f f . . . . . . . . 
+. . . . . . f f . . . . . . . . 
+. . . . . . f f . . . . . . . . 
+. . . . . . f f . . . . . . . . 
+. . . . . . f f . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+`;
+            case "image3":return img`
+. . . . . . . . . . . . . . . . 
+. d d d d d d d d d d d d d d . 
+. d d d d d d d d d d d d d d . 
+. d d d d d d d d d d d d d d . 
+. d d d d d d d d d d d d d d . 
+. d d d d d d d d d d d d d d . 
+. d d d d d d d d d d d d d d . 
+. d d d d d d d d d d d d d d . 
+. d d d d d d d d d d d d d d . 
+. d d d d d d d d d d d d d d . 
+. d d d d d d d d d d d d d d . 
+. d d d d d d d d d d d d d d . 
+. d d d d d d d d d d d d d d . 
+. d d d d d d d d d d d d d d . 
+. d d d d d d d d d d d d d d . 
+. . . . . . . . . . . . . . . . 
+`;
+            case "image4":return img`
+d d d d d d d d d d d d d d d d 
+d d d d d d d d d d d d d d d d 
+d d 2 2 2 2 2 2 2 2 2 2 2 2 d d 
+d d 2 1 1 1 1 1 1 1 1 1 1 2 d d 
+d d 2 1 2 1 2 1 2 1 2 1 1 2 d d 
+d d 2 1 1 2 1 2 1 2 1 2 1 2 d d 
+d d 2 1 2 1 2 1 2 1 2 1 1 2 d d 
+d d 2 1 1 2 1 2 1 2 1 2 1 2 d d 
+d d 2 1 2 1 2 1 2 1 2 1 1 2 d d 
+d d 2 1 1 2 1 2 1 2 1 2 1 2 d d 
+d d 2 1 2 1 2 1 2 1 2 1 1 2 d d 
+d d 2 1 1 2 1 2 1 2 1 2 1 2 d d 
+d d 2 1 1 1 1 1 1 1 1 1 1 2 d d 
+d d 2 2 2 2 2 2 2 2 2 2 2 2 d d 
+d d d d d d d d d d d d d d d d 
+d d d d d d d d d d d d d d d d 
+`;
         }
         return null;
     })
