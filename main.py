@@ -1,7 +1,13 @@
 def on_on_overlap(sprite, otherSprite):
     dough.set_position(randint(10, 160), randint(10, 120))
-    info.start_countdown(5)
-    info.change_score_by(1)
+    if info.score() < 30:
+        info.start_countdown(5)
+    else:
+        info.start_countdown(3)
+    if info.score() >= 30:
+        info.change_score_by(2)
+    else:
+        info.change_score_by(1)
 sprites.on_overlap(SpriteKind.player, SpriteKind.food, on_on_overlap)
 
 dough: Sprite = None
@@ -47,11 +53,11 @@ dough = sprites.create(img("""
             . . . . . . . . . . . . . . . .
     """),
     SpriteKind.food)
-info.set_life(2)
-list = [dough, spatula]
+list2 = [dough, spatula]
+info.set_score(0)
 
 def on_forever():
-    if info.score() >= 10:
+    if info.score() >= 15:
         dough.set_image(img("""
             d d d d d d d d d d d d d d d d 
                         d d d d d d d d d d d d d d d d 
@@ -70,10 +76,6 @@ def on_forever():
                         d d d d d d d d d d d d d d d d 
                         d d d d d d d d d d d d d d d d
         """))
-    if info.score() == 20:
-        info.change_score_by(2)
-    if info.score() == 30:
-        info.change_life_by(1)
-    else:
-        info.change_life_by(0)
+    if info.score() == 50:
+        game.over(True)
 forever(on_forever)
