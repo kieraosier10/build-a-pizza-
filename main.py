@@ -47,6 +47,8 @@ dough = sprites.create(img("""
             . . . . . . . . . . . . . . . .
     """),
     SpriteKind.food)
+info.set_life(2)
+list = [dough, spatula]
 
 def on_forever():
     if info.score() >= 10:
@@ -69,5 +71,9 @@ def on_forever():
                         d d d d d d d d d d d d d d d d
         """))
     if info.score() == 20:
-        game.over(True)
+        info.change_score_by(2)
+    if info.score() == 30:
+        info.change_life_by(1)
+    else:
+        info.change_life_by(0)
 forever(on_forever)

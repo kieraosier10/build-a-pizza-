@@ -42,6 +42,8 @@ dough = sprites.create(img`
     . d d d d d d d d d d d d d d . 
     . . . . . . . . . . . . . . . . 
     `, SpriteKind.Food)
+info.setLife(2)
+let list = [dough, spatula]
 forever(function () {
     if (info.score() >= 10) {
         dough.setImage(img`
@@ -66,9 +68,9 @@ forever(function () {
     if (info.score() == 20) {
         info.changeScoreBy(2)
     }
-    if (info.score() >= 30) {
-    	
+    if (info.score() == 30) {
+        info.changeLifeBy(1)
     } else {
-    	
+        info.changeLifeBy(0)
     }
 })
