@@ -60,7 +60,7 @@ dough = sprites.create(img("""
 list2 = [dough, spatula]
 info.set_score(0)
 
-#changes the image from the dough to the fully made pizza when thescore hits 15
+#changes the image from the dough to the fully made pizza when the score hits 15
 #sets the game to when the score hits 50 the game is over and you win
 def on_forever():
     if info.score() >= 15:
